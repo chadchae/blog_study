@@ -1,0 +1,5 @@
+---
+title: "Study"
+site: distill::distill_website
+listing: posts
+---

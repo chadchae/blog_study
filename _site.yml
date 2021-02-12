@@ -1,0 +1,56 @@
+name: "Study"
+title: "Study"
+description: |
+  Chad (Chungil) Chae
+favicon: img/logo_favicon.png
+output_dir: "docs"
+base_url: https://chadchae.github.io/blog_study/
+repository_url: https://github.com/chadchae/blog_study/
+creative_commons: CC BY
+exclude: ["readme.md", "LICENSE"]
+navbar:
+  logo: img/logo.png
+  source_url: true
+  search: true
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Intro"
+      href: intro.html
+collections:
+  posts:
+    categories: true
+    categories_metadata: true
+    authors_metadata: true
+    feed_items_max: 50
+    citations: true
+    disqus: 
+      shortname: chadchae
+      hidden: false
+    share: [facebook, twitter, linkedin]
+    subscribe: _subscribe.html
+  kor:
+    categories: true
+    categories_metadata: true
+    authors_metadata: true
+    feed_items_max: 50
+    citations: true
+    disqus: 
+      shortname: chadchae
+      hidden: false
+    share: [facebook, twitter, linkedin]
+    subscribe: _subscribe.html
+  eng:
+    categories: true
+    categories_metadata: true
+    authors_metadata: true
+    feed_items_max: 50
+    citations: true
+    disqus: 
+      shortname: chadchae
+      hidden: false
+    share: [facebook, twitter, linkedin]
+    subscribe: _subscribe.html
+rss:
+  full_content: true
+output: distill::distill_article

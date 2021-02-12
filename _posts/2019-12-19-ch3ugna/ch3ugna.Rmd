@@ -1,0 +1,30 @@
+---
+title: "챕터3: 네트웍 데이터 관리"
+description: |
+  A user's guide to network analysis in R 책의 챕터 3 서머리
+author:
+  - name: Chungil Chae
+    url: {}
+date: 12-19-2019
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Network Data Concepts
+
+
+## Creating and Managing Network Objects in R
+
+
+## Importing Network Data
+
+
+## Common Network Data Tasks
+
+

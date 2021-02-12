@@ -1,0 +1,55 @@
+[
+  {
+    "path": "posts/2019-12-19-ch3ugna/",
+    "title": "챕터3: 네트웍 데이터 관리",
+    "description": "A user's guide to network analysis in R 책의 챕터 3 서머리",
+    "author": [
+      {
+        "name": "Chungil Chae",
+        "url": {}
+      }
+    ],
+    "date": "2019-12-19",
+    "categories": [],
+    "contents": "\nTable of Contents\nNetwork Data Concepts\nCreating and Managing Network Objects in R\nImporting Network Data\nCommon Network Data Tasks\nNetwork Data Concepts\nCreating and Managing Network Objects in R\nImporting Network Data\nCommon Network Data Tasks\n\n\n",
+    "preview": {},
+    "last_modified": "2021-02-11T23:26:06-03:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2019-12-18-ch2ugna/",
+    "title": "챕터2: 네트워크 분석 'Five Number Summary'",
+    "description": "A user's guide to network analysis in R 책의 챕터 2 서머리.",
+    "author": [
+      {
+        "name": "Chungil Chae",
+        "url": {}
+      }
+    ],
+    "date": "2019-12-18",
+    "categories": [],
+    "contents": "\nR에서의 네트워크분석: 어디서부터 시작할 것인가?\n준비\n\n\nlibrary(statnet) \nlibrary(UserNetR) \ndata(Moreno)\n\n간단한 시각화\n\n\ngender <- Moreno %v% \"gender\"\nplot(Moreno, vertex.col = gender + 2, vertex.cex = 1.2)\n\n\n기본 디스크립션\n크기\n\n\nnetwork.size(Moreno)\n\n[1] 33\n\nsummary(Moreno,print.adj=FALSE)\n\nNetwork attributes:\n  vertices = 33\n  directed = FALSE\n  hyper = FALSE\n  loops = FALSE\n  multiple = FALSE\n  bipartite = FALSE\n total edges = 46 \n   missing edges = 0 \n   non-missing edges = 46 \n density = 0.08712121 \n\nVertex attributes:\n\n gender:\n   numeric valued attribute\n   attribute summary:\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  1.000   1.000   2.000   1.515   2.000   2.000 \n  vertex.names:\n   character valued attribute\n   33 valid vertex names\n\nNo edge attributes\n\n밀도\n\n\nden_hand <- 2*46/(33*32) \nden_hand\n\n[1] 0.08712121\n\n컴포넌트\n\n\ncomponents(Moreno)\n\n[1] 2\n\n직경\n\n\nlgc <- component.largest(Moreno,result=\"graph\") \ngd <- geodist(lgc)\nmax(gd$gdist)\n\n[1] 11\n\n클러스터링 코이피션트\n\n\ngtrans(Moreno,mode=\"graph\")\n\n[1] 0.2857143\n\n\n\n",
+    "preview": "posts/2019-12-18-ch2ugna/ch2ugna_files/figure-html5/unnamed-chunk-2-1.png",
+    "last_modified": "2021-02-11T23:26:06-03:00",
+    "input_file": {},
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
+    "path": "posts/2019-12-17-ch1ugna/",
+    "title": "챕터1: R에서 소셜네트워크 분석 소개",
+    "description": "A user's guide to network analysis in R 책의 챕터 1 서머리",
+    "author": [
+      {
+        "name": "Chungil Chae",
+        "url": {}
+      }
+    ],
+    "date": "2019-12-17",
+    "categories": [],
+    "contents": "\nTable of Contents\n소셜네트워크란?\n소셜네트워크 분석이란?\nR에서 소셜네트워크 분석을 해야할 5가지 이유\n이 책의 스콥과 리소스\n소셜네트워크란?\n소셜네트워크 분석이란?\nR에서 소셜네트워크 분석을 해야할 5가지 이유\n이 책의 스콥과 리소스\n\n\n",
+    "preview": {},
+    "last_modified": "2021-02-11T23:26:06-03:00",
+    "input_file": {}
+  }
+]

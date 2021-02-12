@@ -1,0 +1,26 @@
+{
+  "articles": [
+    {
+      "path": "index.html",
+      "title": "Study",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-02-12T11:43:36-03:00"
+    },
+    {
+      "path": "intro.html",
+      "title": "Introduction",
+      "description": "Introduction of Study Blog\n",
+      "author": [
+        {
+          "name": "Chungil Chae",
+          "url": "https://chadchae.github.io"
+        }
+      ],
+      "date": "`r format(Sys.time(), '%d %B, %Y')`",
+      "contents": "\n\nContents\nIntroduction\n\nIntroduction\n\n\n\n",
+      "last_modified": "2021-02-12T11:43:38-03:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

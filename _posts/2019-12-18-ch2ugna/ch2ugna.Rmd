@@ -1,0 +1,64 @@
+---
+title: "챕터2: 네트워크 분석 'Five Number Summary'"
+description: |
+  A user's guide to network analysis in R 책의 챕터 2 서머리.
+author:
+  - name: Chungil Chae
+    url: {}
+date: 12-18-2019
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R에서의 네트워크분석: 어디서부터 시작할 것인가?
+
+
+## 준비
+```{r}
+library(statnet) 
+library(UserNetR) 
+data(Moreno)
+```
+
+## 간단한 시각화
+```{r}
+gender <- Moreno %v% "gender"
+plot(Moreno, vertex.col = gender + 2, vertex.cex = 1.2)
+```
+
+
+## 기본 디스크립션
+### 크기
+```{r}
+network.size(Moreno)
+summary(Moreno,print.adj=FALSE)
+```
+
+### 밀도
+```{r}
+den_hand <- 2*46/(33*32) 
+den_hand
+```
+
+### 컴포넌트
+```{r}
+components(Moreno)
+```
+
+### 직경
+```{r}
+lgc <- component.largest(Moreno,result="graph") 
+gd <- geodist(lgc)
+max(gd$gdist)
+```
+
+## 클러스터링 코이피션트
+```{r}
+gtrans(Moreno,mode="graph")
+```
+

@@ -1,0 +1,27 @@
+---
+title: "챕터1: R에서 소셜네트워크 분석 소개"
+description: |
+  A user's guide to network analysis in R 책의 챕터 1 서머리
+author:
+  - name: Chungil Chae
+    url: {}
+date: 12-17-2019
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 소셜네트워크란?
+
+## 소셜네트워크 분석이란?
+
+## R에서 소셜네트워크 분석을 해야할 5가지 이유
+
+## 이 책의 스콥과 리소스
+
+
